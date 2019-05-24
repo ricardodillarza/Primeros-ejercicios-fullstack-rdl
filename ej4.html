@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Herencia de hermanos</title>
+</head>
+
+<body>
+<script>
+let dineroInicialJuan= parseInt(prompt("Introduce el dinero inicial de Juan"));
+let dineroInicialJose= parseInt(prompt("Introduce el dinero inicial de José"));
+let numeroHermanos=2
+
+let herenciaTotal= parseInt(prompt("Introduce el monto total de la herencia"));
+
+
+let herenciaJuan= herenciaTotal/numeroHermanos;
+let herenciaJose= herenciaTotal/numeroHermanos;
+
+let dineroAmbosSinHerencia= dineroInicialJuan+dineroInicialJose;
+
+let dineroTotalJuan= dineroInicialJuan+herenciaJuan;
+
+let dineroTotalJose= dineroInicialJose+herenciaJose;
+
+let totalAmbos= dineroTotalJuan+dineroTotalJose;
+
+alert("El dinero total de Juan después de recibir su parte de la herencia es de: "+"$"+dineroTotalJuan);
+
+alert("El dinero total de José después de recibir su parte de la herencia es de: "+"$"+dineroTotalJose);
+
+alert("Entre Juan y José acumulan un total de: "+"$"+totalAmbos);
+	
+</script>	
+</body>
+</html>
