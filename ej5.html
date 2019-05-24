@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Venta de Startup</title>
+</head>
+
+<body>
+<script>
+let valorStartup= parseInt(prompt("Introduce el valor de la startup"));
+let iva=0.16;
+let numeroSocios=2;
+
+let gananciaSocio1SinIva= valorStartup/numeroSocios;
+let gananciaSocio2SinIva= valorStartup/numeroSocios;
+
+let gananciaSocio1ConIva= gananciaSocio1SinIva-(gananciaSocio1SinIva*iva);
+let gananciaSocio2ConIva= gananciaSocio2SinIva-(gananciaSocio2SinIva*iva);
+
+alert("La ganancia del Socio 1 después de pagar el IVA correspondiente es de: "+"$"+gananciaSocio1ConIva);
+alert("La ganancia del Socio 2 después de pagar el IVA correspondiente es de: "+"$"+gananciaSocio2ConIva);
+	
+</script>	
+</body>
+</html>
