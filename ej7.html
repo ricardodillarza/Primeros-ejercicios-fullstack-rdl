@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pago de cuenta en restaurante</title>
+</head>
+
+<body>
+<script>
+let cuentaTotal=parseInt(prompt("Introduce el monto total de la cuenta"));
+let amigosTotales=parseInt(prompt("Introduce el número de personas entre las que deseas dividir la cuenta"));
+let propina= 0.10;
+let totalConPropina= (cuentaTotal*propina)+cuentaTotal;
+let cantidadAPagarCadaUno=totalConPropina/amigosTotales;
+alert("Cada persona deberá pagar "+"$"+cantidadAPagarCadaUno+" ya con la propina incluida.");
+	
+</script>	
+</body>
+</html>
